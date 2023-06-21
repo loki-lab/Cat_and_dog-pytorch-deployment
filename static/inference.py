@@ -21,7 +21,7 @@ def transform_data(img):
 
 def inference_model(tensor):
     model = ImageClassifier()
-    model.load_state_dict(torch.load("./static/best_model.pt",  map_location=torch.device('cpu')))
+    model.load_state_dict(torch.load("./static/best_model.pt"))
     model.eval()
     outputs = model(tensor)
     _, y_hat = outputs.max(1)

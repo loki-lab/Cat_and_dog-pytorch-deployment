@@ -1,5 +1,5 @@
-torch
-torchvision
-torchaudio
+torch --index-url https://download.pytorch.org/whl/cu117
+torchvision --index-url https://download.pytorch.org/whl/cu117
+torchaudio --index-url https://download.pytorch.org/whl/cu117
 flask
 pillow
